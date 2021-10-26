@@ -1,0 +1,16 @@
+.expense-item-detail {
+  width: 60%;
+  padding: 0.2rem 0;
+}
+
+.expense-item-detail h1 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.expense-item-detail p {
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+}

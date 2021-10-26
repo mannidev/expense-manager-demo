@@ -1,0 +1,24 @@
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.expense-date {
+  display: inline-block;
+  text-align: center;
+}
+
+.expense-date h1 {
+  font-size: 1rem;
+  color: #bbaaf89a;
+}
+
+.expense-date h2 {
+  color: #7f5ff39a;
+}
+
+.expense-date h3 {
+  font-size: 1rem;
+  color: #bbaaf89a;
+}

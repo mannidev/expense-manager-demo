@@ -1,4 +1,5 @@
 .expense-list {
+  box-sizing: border-box;
   list-style: none;
   display: block;
   width: 80%;
@@ -7,8 +8,10 @@
 }
 
 .expense-list-item {
-  border: 2px solid rgb(15, 75, 185); 
-  padding: 1rem;
+  border-bottom: 1px solid #0f4ab957; 
+  margin-bottom: 10px;
+  padding: 0 .5rem .5rem .5rem;
   display: flex;
+  flex: 1 0 0;
   justify-content: space-between;
 }
