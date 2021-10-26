@@ -1,3 +1,8 @@
-h1, p {
-  font-family: Lato;
+.main-content {
+  width: 60%;
+  margin: 5rem auto;
+  padding: 1rem;
+  color: #1b1b1b96;
+  box-shadow: 0 0 0.5rem 1px #c7c7c7;
+  font-family: sans-serif;
 }
