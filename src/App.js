@@ -24,7 +24,7 @@ export default function App() {
       <Header title={Labels.Page.title}></Header>
       <MainContent>
         <ExpenseForm onSave={onSaveExpenseItemHandler} />
-
+ 
         <ExpensesListView data={expenseItems} />
       </MainContent>
     </div>
