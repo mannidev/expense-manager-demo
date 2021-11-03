@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import './style.css';
 
+import AppContainer from './components/app-container/AppContainer';
+import SidePanel from './components/side-panel/SidePanel';
 import Header from './components/header/Header';
 import MainContent from './components/main-content/MainContent';
 import ExpenseForm from './components/expense-form/ExpenseForm';
 import ExpensesListView from './components/expenses-list-view/ExpensesListView';
+
+import Login from './pages/login/login.js'
 
 import { ExpensesModel } from './model/ExpensesModel';
 import * as Labels from './labels';
@@ -20,13 +24,10 @@ export default function App() {
   };
 
   return (
-    <div className="main-content">
-      <Header title={Labels.Page.title}></Header>
-      <MainContent>
-        <ExpenseForm onSave={onSaveExpenseItemHandler} />
- 
-        <ExpensesListView data={expenseItems} />
-      </MainContent>
-    </div>
+    <AppContainer>
+      <SidePanel display="hide">hello</SidePanel>
+      <MainContent display="hide">there</MainContent>
+      <Login />
+    </AppContainer>
   );
 }

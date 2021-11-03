@@ -1,0 +1,13 @@
+.container {
+  width: 35%;
+  padding: 1rem;
+  background-color: #e8f3ed;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
