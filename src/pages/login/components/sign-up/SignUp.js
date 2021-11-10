@@ -6,7 +6,7 @@ import Button from '../button/Button';
 
 function SignUp(props) {
   return (
-    <div className={`form-container ${style['sign-up-container']}`}>
+    <div className={`${style['form-container']} ${style['sign-up-container']}`}>
       <form className={style.form} action="#">
         <h1>Create Account</h1>
         <SocialMediaHandles />

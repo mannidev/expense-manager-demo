@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './social-media-handles.module.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -9,7 +10,7 @@ import {
 
 function SocialMediaHandles(props) {
   return (
-    <div class="social-container">
+    <div className={style['social-container']}>
       <a href="#" class="social">
         <FontAwesomeIcon icon={faFacebookF} />
       </a>
