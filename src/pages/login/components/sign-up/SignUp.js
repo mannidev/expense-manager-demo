@@ -1,22 +1,21 @@
 import React from 'react';
-import style from './sign-up-style.module.css';
+import './sign-up-style.css';
 
 import SocialMediaHandles from '../social-media/SocialMediaHandles';
+import LoginForm from '../login-form/LoginForm';
 import Button from '../button/Button';
 
 function SignUp(props) {
   return (
-    <div className={`${style['form-container']} ${style['sign-up-container']}`}>
-      <form className={style.form} action="#">
-        <h1>Create Account</h1>
-        <SocialMediaHandles />
-        <span>or use your email for registration</span>
-        <input className={style.input} type="text" placeholder="Name" />
-        <input className={style.input} type="email" placeholder="Email" />
-        <input className={style.input} type="password" placeholder="Password" />
-        <Button label="Sign Up" />
-      </form>
-    </div>
+    <LoginForm classNames="sign-up-container">
+      <h1>Create Account</h1>
+      <SocialMediaHandles />
+      <span>or use your email for registration</span>
+      <input className="input" type="text" placeholder="Name" />
+      <input className="input" type="email" placeholder="Email" />
+      <input className="input" type="password" placeholder="Password" />
+      <Button label="Sign Up" />
+    </LoginForm>
   );
 }
 
