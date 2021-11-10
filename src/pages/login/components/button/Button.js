@@ -2,8 +2,8 @@ import React from 'react';
 import style from './button.module.css';
 
 function Button(props) {
-  const onClickEventHandler = () => {
-    props.onClick();
+  const onClickEventHandler = (event) => {
+    props.onClick(event);
   };
 
   return (
