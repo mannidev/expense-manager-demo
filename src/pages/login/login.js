@@ -13,10 +13,19 @@ function Login(props) {
     setOverlayClickClassName(event);
   };
 
+  const onSignInEventHandler = (event) => {
+    console.log(event);
+  };
+
+  const onSignUpEventHandler = (event) => {
+    console.log(event);
+    setOverlayClickClassName(''); setOverlayClickClassName('');
+  };
+
   return (
     <div class={`container ${overlayClickClassName}`}>
-      <SignIn />
-      <SignUp />
+      <SignIn onSubmit={onSignInEventHandler} />
+      <SignUp onSubmit={onSignUpEventHandler} />
       <Overlay onClick={onOverlayClickEventHandler} />
     </div>
   );

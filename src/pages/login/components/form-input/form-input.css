@@ -1,0 +1,26 @@
+.input-group {
+  display: inline-block;
+  width: 70%;
+}
+
+.input {
+  background-color: #eee;
+  border: none;
+  padding: 0.75rem 0.94rem;
+  margin: 0.5rem 0 0.3rem 0;
+  width: 100%;
+  outline: none;
+}
+
+.input.error {
+  border: 1px solid red;
+  background-color: #d811110a;
+}
+
+.input-group div.error {
+  color: red;
+  display: none;
+  font-size: 0.7rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}

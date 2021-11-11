@@ -15,11 +15,3 @@
   height: 100%;
   text-align: center;
 }
-
-.form-container input {
-  background-color: #eee;
-  border: none;
-  padding: 0.75rem 0.94rem;
-  margin: 0.5rem 0;
-  width: 70%;
-}
