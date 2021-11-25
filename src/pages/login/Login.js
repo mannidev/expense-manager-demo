@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './login-style.css';
 
 import SignIn from './components/sign-in/SignIn';
@@ -7,7 +8,7 @@ import Overlay from './components/overlay/Overlay';
 
 function Login(props) {
   const [overlayClickClassName, setOverlayClickClassName] = useState('');
-  const display = props.display === 'hide' ? hide : '';
+  const navigate = useNavigate();
 
   const onOverlayClickEventHandler = (event) => {
     setOverlayClickClassName(event);
@@ -15,11 +16,13 @@ function Login(props) {
 
   const onSignInEventHandler = (event) => {
     console.log(event);
+    navigate('/dashboard');
   };
 
   const onSignUpEventHandler = (event) => {
     console.log(event);
-    setOverlayClickClassName(''); setOverlayClickClassName('');
+    setOverlayClickClassName('');
+    setOverlayClickClassName('');
   };
 
   return (

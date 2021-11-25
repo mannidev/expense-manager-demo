@@ -4,11 +4,10 @@ import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import AppContainer from './components/app-container/AppContainer';
-import ExpenseForm from './components/expense-form/ExpenseForm';
-import ExpensesListView from './components/expenses-list-view/ExpensesListView';
-
-import Login from './pages/login/Login';
 import Dashboard from './pages/dashboard/Dashboard';
+import Expense from './pages/expense/Expense';
+import Login from './pages/login/Login';
+
 
 import { ExpensesModel } from './model/ExpensesModel';
 import * as Labels from './labels';
@@ -28,6 +27,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="dashboard" element={<Dashboard />} />
+        <Route path="expense" element={<Expense />} />
       </Routes>
     </AppContainer>
   );
