@@ -1,0 +1,56 @@
+.main-nav {
+  background-color: #212121;
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  overflow: hidden;
+  transition: width 0.5s linear;
+}
+
+.link-item {
+  display: flex;
+  color: #999999da;
+  text-decoration: none;
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.fa {
+  display: block;
+  min-width: 50px;
+  height: 15px;
+}
+
+.nav-text {
+  display: block;
+  font-size: 0.7rem;
+}
+
+.main-nav li div {
+  display: block;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.link-item:hover {
+  background-color: #27ace0;
+  color: #ffffff;
+}
+
+.active
+
+.main-nav:hover {
+  width: 100%;
+  overflow: visible;
+}
+
+.logout {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.logout li {
+  margin: 0;
+}
