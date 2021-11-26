@@ -6,8 +6,8 @@ import MainContent from '../../components/main-content/MainContent';
 function Expense() {
   return (
     <Fragment>
-      <SidePanel>hello</SidePanel>
-      <MainContent>there</MainContent>
+      <SidePanel></SidePanel>
+      <MainContent></MainContent>
     </Fragment>
   );
 }
