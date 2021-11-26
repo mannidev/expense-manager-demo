@@ -1,6 +1,7 @@
 import './dashboard.css';
 import React, { Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NavLink } from 'react-router-dom';
 import {
   faHome,
   faPowerOff,
@@ -17,53 +18,39 @@ function Dashboard() {
   return (
     <Fragment>
       <SidePanel>
-        <nav className="main-nav">
-          <ul>
-            <li>
-              <a href="http://justinfarrow.com">
-                <FontAwesomeIcon className="fa" icon={faHome} />
-              </a>
-              <div className="nav-text">Dashboard</div>
-            </li>
+        <div className="main-nav">
+          <NavLink to="/dashboard" className="link-item">
+            <FontAwesomeIcon className="fa" icon={faHome} />
+            <div className="nav-text">Dashboard</div>
+          </NavLink>
 
-            <li class="has-subnav">
-              <a href="#">
-                <FontAwesomeIcon className="fa" icon={faMoneyBillWaveAlt} />
-              </a>
-              <div className="nav-text">Expenses</div>
-            </li>
+          <NavLink to="/expense" className="link-item">
+            <FontAwesomeIcon className="fa" icon={faMoneyBillWaveAlt} />
+            <div className="nav-text">Expenses</div>
+          </NavLink>
 
-            <li class="has-subnav">
-              <a href="#">
-                <FontAwesomeIcon className="fa" icon={faTasks} />
-              </a>
-              <div className="nav-text">Tasks</div>
-            </li>
+          <NavLink to="" className="link-item">
+            <FontAwesomeIcon className="fa" icon={faTasks} />
+            <div className="nav-text">Tasks</div>
+          </NavLink>
 
-            <li class="has-subnav">
-              <a href="#">
-                <FontAwesomeIcon className="fa" icon={faBook} />
-              </a>
-              <div className="nav-text">Library</div>
-            </li>
+          <NavLink to="" className="link-item">
+            <FontAwesomeIcon className="fa" icon={faBook} />
+            <div className="nav-text">Library</div>
+          </NavLink>
 
-            <li class="has-subnav">
-              <a href="#">
-                <FontAwesomeIcon className="fa" icon={faPenFancy} />
-              </a>
-              <div className="nav-text">Journal</div>
-            </li>
-          </ul>
+          <NavLink to="" className="link-item">
+            <FontAwesomeIcon className="fa" icon={faPenFancy} />
+            <div className="nav-text">Journal</div>
+          </NavLink>
 
-          <ul class="logout">
-            <li>
-              <a href="#">
-                <FontAwesomeIcon className="fa" icon={faPowerOff} />
-              </a>
+          <div className="logout">
+            <NavLink to="" className="link-item">
+              <FontAwesomeIcon className="fa" icon={faPowerOff} />
               <div className="nav-text">Logout</div>
-            </li>
-          </ul>
-        </nav>
+            </NavLink>
+          </div>
+        </div>
       </SidePanel>
       <MainContent>there</MainContent>
     </Fragment>
