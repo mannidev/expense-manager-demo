@@ -37,7 +37,10 @@
   color: #ffffff;
 }
 
-.active
+.active {
+  background-color: #0e7bd4;
+  color: #ffffff;
+}
 
 .main-nav:hover {
   width: 100%;
