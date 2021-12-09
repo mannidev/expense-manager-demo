@@ -20,7 +20,7 @@ function SignIn(props) {
     event.preventDefault();
     const form = loginFormModel();
     form.userEmail = email;
-    form.userPassword = password;
+    form.userPassword = password; 
     props.onSubmit(form);
   };
 
